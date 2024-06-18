@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <body>
     <h1>Fix width</h1>
@@ -5,25 +6,42 @@
     <script src="popup.js"></script>
   </body>
   <style>
+    @font-face {
+      font-family: "win";
+      src: url("W95FA.otf") format("opentype");
+    }
+
     * {
-      font-weight: normal;
+      font-family: "win";
     }
-    :root {
-      font-family: system-ui; 
-    }
+
     body {
-      width: 100px;
+      width: 200px;
+      padding: 1rem;
       background: rgb(250, 250, 250);
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: start;
+      margin: 0;
+      border-top: 0.25rem solid lightgrey;
+      border-right: 0.25rem solid darkgrey;
+      border-bottom: 0.25rem solid black;
+      border-left: 0.25rem solid white;
     }
+
+    h1 {
+      font-size: 3rem;
+    }
+
     button {
       background: inherit;
-      border: 2px solid black;
-      padding: 0.50rem 0.75rem;
-      border-radius: 7.5px;
-      box-shadow: 0px 0px 2.5px rgb(212, 212, 212);
+      border-top: 0.25rem solid lightgrey;
+      border-right: 0.25rem solid darkgrey;
+      border-bottom: 0.25rem solid black;
+      border-left: 0.25rem solid white;
+      padding: 1rem 1.50rem;
+      font-size: 2rem;
     }
     button:hover {
       cursor: pointer;
