@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <h1>Fix width</h1>
-    <button id="fix-width-btn">Fix!</button>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <div id="settings-cont">
+            <div class="setting-item-cont" id="width-cont">
+                <label for="size">Width</label>
+                <select name="size" id="width-selector">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </div>
+            <div class="setting-item-cont">
+                <label for="memory">Remember</label>
+                <label class="switch">
+                  <input type="checkbox" id="remember-toggle" value="false">
+                  <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <button id="fix-width-btn">Fix!</button>
+    </body>
     <script src="popup.js"></script>
-  </body>
+    <script src="state.js"></script>
 </html>
