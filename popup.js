@@ -13,7 +13,6 @@ async function triggerContentFunction() {
     return
   }
 
-
   try {
     let sizePreference = this.localStorage.getItem("width")
     console.log(sizePreference)
